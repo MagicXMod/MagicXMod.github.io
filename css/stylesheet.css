@@ -18,7 +18,7 @@
 body {
     background-color: #fafafa;
     color: #565656;
-    font-family: 'Ampersand', Montserrat, sans-serif;
+    font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, serif;
 }
 
 h1,
