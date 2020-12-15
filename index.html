@@ -24,8 +24,8 @@
 
         .CustomBorder {
             padding: 10px;
-            border: 1px darkgray solid;
-            background-color: #ebedeb;
+            border: 1px #c5cac5 solid;
+            background-color: #f0f1f0;
         }
 
         .GrayBorder {
@@ -36,6 +36,34 @@
         .NormalFont {
             font-family: 'Ampersand', Montserrat, sans-serif;
         }
+
+        /* Style buttons */
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+
+        .buttonRound {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 50%;
+        }
     </style>
     <script>
         function hideDetails(id) {
@@ -45,7 +73,7 @@
             } else {
                 x.style.display = "none";
             }
-        } 
+        }
     </script>
 </head>
 
@@ -458,7 +486,7 @@
                 <br />
 
                 <!-- Contact Info -->
-                <h2>Contact information</h2>
+                <h2>Contact Information</h2>
                 <ul class="GrayBorder">
                     <li>Telegram Group: <a href="https://t.me/MagicXMod"> https://t.me/MagicXMod</a></li>
                     <li>Telegram: <a href="https://t.me/Ahsan400">https://t.me/Ahsan400</a></li>
@@ -472,15 +500,36 @@
                         <span><small style="font-size: 13px;">20H1 V1
                                 (B19041.388)</small></span>
                     </h2>
-                    <a href="#" class="button sprite" role="button">
-                        <font class="NormalFont">
-                            Download 20H1
-                        </font>
-                    </a>
-                    <a href="#" class="button sprite" target="_blank" role="button">
-                        <font class="NormalFont">
-                            Old Releases <small>(19H2)</small></font>
-                    </a>
+                    <!-- Downloads -->
+                    <button onclick="hideDetails('latestDownload')" class="btn" style="width:100%;">
+                        Download Now</button>
+                    <br />
+                    <div style="display: none;" id="latestDownload" class="GrayBorder">
+                        <!-- Gdrive Icon -->
+                        <a href="https://drive.google.com/file/d/1Hj2MkLnx32oA1vRBowOaQk6YQlQ0Fhur/view?usp=sharing" class="buttonRound"
+                            style="background-color: #4688F4; border-radius: 12px; color: White;">
+                            <i class="fa"><b class="NormalFont">G Drive</b></i>
+                        </a>
+                        <!-- Mega.nz Download -->
+                        <a href="https://mega.nz/#!kep0lITD!KwK8dkVXOGtv7jJdvM7YMStMllRqz7ueRotpWJLa1R8" class="buttonRound"
+                            style="background-color: #d9272e; border-radius: 12px; color: White;">
+                            <i class="fa"></i><b class="NormalFont">MEGA.NZ</b></i>
+                        </a>
+                        <br />
+                        <br />
+                    </div>
+                    <br />
+                    <!-- Old Relases Button -->
+                    <button onclick="setLocation('old')" class="btn" style="width:100%;">
+                        Old Releases</button>
+                    <script>
+                        function setLocation(url) {
+                            var base_url = window.location.origin + '/' + window.location.pathname.split('/')[1];
+                            window.location.href = base_url + url;
+                        }
+                    </script>
+                    <br />
+                    <br />
                     <p class="repo-owner">
                         <a href="https://MagicXMod.github.io">MagicXMod Project</a> is maintained by <a
                             href="https://t.me/Ahsan400">Ahsan400</a>.
