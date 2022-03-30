@@ -169,26 +169,37 @@
                 <center>
                     <!-- Downloads -->
                     <h2 class="version NormalFont" style="padding: 10px 0px 10px 0px;">Latest version <br />
-                        <span><small style="font-size: 13px;">20H2 V1
-                                (B19042.685)</small></span>
+                        <span><small style="font-size: 13px;">21H1 V1
+                                (B19043.1110)</small></span>
                     </h2>
                     <button onclick="hideDetails('latestDownload')" class="btn" style="width:100%;">
                         Download Now</button>
                     <br />
                     <div style="display: none;" id="latestDownload" class="GrayBorder">
                         <!-- Gdrive Icon -->
-                        <a href="https://drive.google.com/file/d/11sryYWrHBp4ln3KQnt7IF7AxSPMhhCzi/view?usp=sharing"
+                        <a href="https://drive.google.com/file/d/1Pclj4nP1SRrSNoTG61cVGZrcQcrMiWqh/view?usp=sharing"
                             class="buttonRound" style="background-color: #4688F4; border-radius: 12px; color: White;">
                             <i class="fa"><b class="NormalFont">G Drive</b></i>
                         </a>
                         <!-- Mega.nz Download -->
-                        <a href="https://mega.nz/file/lC4UTYSD#TJjcBAoUpkmQ1C5P_YNPhy0FZnJVyBhrxPZnftFEOQs"
+                        <a href="https://mega.nz/file/sf5xyCyB#TiFUBkVrN3wEtFUQrcjDXRusfp4Wx-psPjt-nsvHv3Y"
                             class="buttonRound" style="background-color: #d9272e; border-radius: 12px; color: White;">
                             <i class="fa"></i><b class="NormalFont">MEGA.NZ</b></i>
                         </a>
                         <br />
                         <br />
                     </div>
+                    <br />
+                    <!-- Old Relases Button -->
+                    <button onclick="setLocation('old')" class="btn" style="width:100%;">
+                        Old Releases</button>
+                    <script>
+                        function setLocation(url) {
+                            var base_url = window.location.origin + '/' + window.location.pathname.split('/')[1];
+                            window.location.href = base_url + url;
+                        }
+                    </script>
+                    <br />
                     <br />
                     <p class="repo-owner">
                         <a href="https://MagicXMod.github.io">MagicXMod Project</a> is maintained by <a
