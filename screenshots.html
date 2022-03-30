@@ -209,11 +209,11 @@
                     </div>
                     <br />
                     <!-- Old Relases Button -->
-                    <button onclick="setLocation('old')" class="btn" style="width:100%;">
+                    <button onclick="setLocation('/old')" class="btn" style="width:100%;">
                         Old Releases</button>
                     <script>
                         function setLocation(url) {
-                            var base_url = window.location.origin + '/' + window.location.pathname.split('/')[1];
+                            var base_url = 'https://MagicXMod.github.io';
                             window.location.href = base_url + url;
                         }
                     </script>
